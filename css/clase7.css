@@ -1,0 +1,48 @@
+header {
+    background-color: #E5E5E5;
+    padding: 22px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+.b-i {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+.space {
+    padding: 50px;
+}
+
+.color-bg {
+    text-transform: uppercase;
+    color: #005677 ;
+    padding: 2px;
+    background-color: #C4C4C4;
+    letter-spacing: 8px;
+}
+
+footer {
+    background-color: #005677;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.enlaces h3 {
+    display: inline;
+    margin-right: 20px;
+}
+
+.enlaces a {
+    margin: 10px;
+}
