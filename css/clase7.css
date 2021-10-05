@@ -18,7 +18,10 @@ h2 {
     font-weight: bold;
 }
 
-
+.list-none {
+    list-style: none;
+    padding: 25px;
+}
 
 .space {
     padding: 50px;
