@@ -30,9 +30,9 @@ body {
 
 .desk-heroes {
     padding-top: 7rem;
-    max-width: 70%;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card-heroes {
@@ -46,8 +46,12 @@ body {
 
 .heroe-head {
     height: 194px;
-    background-image: url(/img/gotica.png);
+    background-image: url(/clase11/heroes_flexbox/img/gotica.png);
     background-repeat: no-repeat;
+}
+
+.quinn-head {
+    background-image: url(/clase11/heroes_flexbox/img/colors.png);
 }
 
 .heroe-head img {

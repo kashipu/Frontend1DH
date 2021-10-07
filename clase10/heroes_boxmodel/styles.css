@@ -46,8 +46,12 @@ body {
 
 .heroe-head {
     height: 194px;
-    background-image: url(/img/gotica.png);
+    background-image: url(/clase10/heroes_boxmodel/img/gotica.png);
     background-repeat: no-repeat;
+}
+
+.colors-quinn {
+    background-image: url(/clase10/heroes_boxmodel/img/colors.png);
 }
 
 .heroe-head img {

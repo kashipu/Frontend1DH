@@ -53,3 +53,13 @@
 .box4 {
     background-color: crimson;
 }
+
+.texto-ejercicio {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.texto-ejercicio p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
