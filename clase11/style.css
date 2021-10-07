@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    outline: 1px solid red;
+    margin: 30px auto;
+    height: 700px;
+    display: flex; /* Propiedad flex */
+    /* 
+    * flex-direction: 4 propiedades
+        * row => en fila
+        * row-reverse => fila en reversa
+        * column => eje principal es el eje Y
+        ! Dirección del flujo del padre 
+    */
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 150px;
+    /* height: 150px; */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.box1 {
+    background-color: salmon;
+    min-height: 300px;
+    align-self: flex-start;
+}
+
+.box2 {
+    background-color: tomato;
+}
+.box3 {
+    background-color: lightblue;
+}
+.box4 {
+    background-color: crimson;
+}

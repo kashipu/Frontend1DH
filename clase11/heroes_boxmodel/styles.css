@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-top {
+    background-color: #1CD1B0;
+    padding: 10px;
+}
+
+.banner-nav {
+    background-color: #00669F;
+    padding: 50px 20px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+    box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+}
+
+.banner-nav h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.desk-heroes {
+    margin: 155px 0px;
+    display: inline-block;
+}
+
+.card-heroes {
+    width: 300px;
+}
+
+.heroe-head {
+    height: 194px;
+    background-image: url(/clase10/ejercicio/img/gotica.png);
+    background-repeat: no-repeat;
+}
