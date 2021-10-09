@@ -10,9 +10,30 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #00669F;
+}
+
+.nav ul li a:hover {
+    color: red
+}
+
+.banner-nav {
+    background-color: #00669F;;
+}
+
 .banner-top {
     background-color: #1CD1B0;
     padding: 10px;
+    padding: 1rem;
 }
 
 .banner-nav {
