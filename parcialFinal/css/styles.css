@@ -1,0 +1,25 @@
+@import '/css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+:root {
+    /* ! Colores primarios */
+    --rojo-500: rgb(242, 95, 58);
+    --azul-500: rgb(35, 44, 81);
+    /* ! Colores Neutros */
+    --azul-100: rgb(143, 148, 167);
+    --azul-700: rgb(29, 30, 37);
+    --rojo-100: rgb(255, 239, 234);
+    --gris: rgb(249, 249, 249);
+    /* ! Breakpoints */ 
+    --mobile: 375px;
+    --tablet: 769px;
+    --desktop: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: crimson;
+}
+
+.container {
+    margin-top: 4rem;
+}
+
+form {
+    font-size: 1.2rem;
+    background-color: white;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+fieldset {
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border: 0;
+}
+
+legend {
+    font-weight: 700;
+}
+legend::before{
+    content: "* ";
+    
+}
+
+input {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input {
+    padding: .4rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    display: inline;
+    width: 1rem;
+}
+
+button {
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: .2rem 1rem;
+}

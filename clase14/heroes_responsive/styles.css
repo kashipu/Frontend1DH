@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #00669F;
+}
+
+.nav ul li a:hover {
+    color: red
+}
+
+.banner-nav {
+    background-color: #00669F;;
+}
+
+.banner-top {
+    background-color: #1CD1B0;
+    padding: 10px;
+    padding: 1rem;
+}
+
+.banner-nav {
+    background-color: #00669F;
+    padding: 50px 20px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+    box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+}
+
+.banner-nav h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.desk-heroes {
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-heroes {
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    margin: 1.2rem;
+    position: relative;
+    background-color: #F3F3F3;
+}
+
+.heroe-head {
+    height: 194px;
+    background-image: url(/clase11/heroes_flexbox/img/gotica.png);
+    background-repeat: no-repeat;
+}
+
+.quinn-head {
+    background-image: url(/clase11/heroes_flexbox/img/colors.png);
+}
+
+.superman-head {
+    background-image: url(/clase14/heroes_responsive/img/fondosuperman.png);
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.heroe-head img {
+    position: relative;
+    top: 1rem;
+    left: -7rem;
+}
+
+.heroe-photo {
+    position: absolute;
+    top: 120px;
+    left: 30%;
+}
+
+.heroe-photo img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.heroe-body {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    height: 200px;
+}
+
+.heroe-body h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.heroe-body p {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.heroe-button {
+    padding: 3rem;
+}
+
+.heroe-button a {
+    background-color: #00669F;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.button__fixed {
+    width: 60px;
+    height: 60px;
+    background-color: #00669F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.button__fixed a {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.button__fixed a {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    margin-top: 7rem;
+    background-color: #00669F;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+@media (max-width: 925px) {
+    .desk-heroes {
+        padding-top: 7rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10rem;
+    }
+
+    .card-heroes {
+        margin: 0rem;
+    }
+}

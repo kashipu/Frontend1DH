@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color: #F0A83E;
+  --secondary-color: #3C2313;
+  --tertiary-color: #8A8787;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.header{
+  background-color: var(--primary-color);
+  height: 82px;
+  width: 100%;
+}
+.header__language{
+  background-color: black;
+  height: 20px;
+  width: 100%;
+}
+.header__language h2{
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-left: 5%;
+  vertical-align: middle;
+}
+.site-menu{
+  display: flex;
+  flex-flow: row wrap;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.site-menu__logo{
+  margin-left: 2rem;
+}
+.site-menu__logo:after{
+  content: url('../images/cat-logo.png');
+}
+.site-menu__logo:before{
+  content: url('../images/dog-logo.png');
+}
+
+.site-menu__title{
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  z-index: 2;
+}
+.site-menu__title:after{
+  content: "Cat&Dog";
+  color: white;
+} 
+.nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu{
+  align-content: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-evenly;
+  width: 90%;
+}
+.nav ul{
+  list-style-image: url('../images/paw-icon.png');
+}
+.nav__item{
+  color: white;
+  font-size: 1.3rem;
+}
+
+.banner{
+  background-image: url('../images/bg-banner.png');
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.banner__info{
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  text-align: center;
+}
+.banner__title{
+  background-color: #fff;
+  border-radius: 5px;
+  color: #3C2313;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.banner__text{
+  color: #3C2313;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.banner_button{
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: #FFF;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 1.2rem auto;
+  padding: 1.5rem;
+  
+}
+.products{
+   width: 90vw;
+   margin: 1rem auto;
+}
+.products__title{
+  font-size: 3.6rem;
+  text-align: center;
+}
+.products__links{
+  color: #666666;
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1.3rem;
+  justify-content: center;
+  list-style-type: none;
+  margin: 2rem;
+}
+.products__list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.product{
+  background-color: #FBFAF6;
+  width: 265px;
+}
+.product__name{
+  color: #3C2313;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.product__price{
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.product__price::before{
+  content: '$';
+}
+
+.product__price--decimal{
+  font-size: 0.75rem;
+}
+.contact{
+  /* Para cuando veamos formularios*/
+}
+
+.newsletter{
+  background-color: var(--primary-color);
+  height: 60px;
+  width: 100%;
+}
+.footer{
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.foote__menu{
+  list-style-type: none;
+  margin: 1rem 1.2rem;
+  margin-right: auto;
+}
+.footer__link {
+  margin: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.footer__link img{
+  vertical-align: middle;
+}
+.footer__link span{
+  margin-left: 2rem;
+}
+.footer__logo{
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;  
+}
+.footer__img{
+  max-width: 166px;
+  margin-right: 1.2rem;
+}
+
+@media screen and (max-width: 540px){
+  .nav{
+    display: none;
+  }
+  .banner{
+    background-position: right;
+  }
+} 
+

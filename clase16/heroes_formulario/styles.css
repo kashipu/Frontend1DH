@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-top {
+    background-color: #1CD1B0;
+    padding: 10px;
+    padding: .8rem;
+}
+
+.banner-top h2 {
+    font-size: 1rem;
+}
+
+.banner-nav {
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    padding: 40px 20px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+    box-shadow: 0px 5px 5px 0px rgba(135, 135, 135, 1);
+}
+
+.banner-nav h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+}
+
+.banner-login {
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+}
+
+.banner-login ul {
+    padding-right: 1rem;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    color: white;
+
+}
+
+.banner-login li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.desk-heroes {
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-heroes {
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    margin: 1.2rem;
+    position: relative;
+    background-color: #F3F3F3;
+}
+
+.heroe-head {
+    height: 194px;
+    background-image: url(/clase11/heroes_flexbox/img/gotica.png);
+    background-repeat: no-repeat;
+}
+
+.quinn-head {
+    background-image: url(/clase11/heroes_flexbox/img/colors.png);
+}
+
+.superman-head {
+    background-image: url(/clase14/heroes_responsive/img/fondosuperman.png);
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.heroe-head img {
+    position: relative;
+    top: 1rem;
+    left: -7rem;
+}
+
+.heroe-photo {
+    position: absolute;
+    top: 120px;
+    left: 30%;
+}
+
+.heroe-photo img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.heroe-body {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    height: 200px;
+}
+
+.heroe-body h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.heroe-body p {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.heroe-button {
+    padding: 3rem;
+}
+
+.heroe-button a {
+    background-color: #00669F;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.button__fixed {
+    width: 60px;
+    height: 60px;
+    background-color: #00669F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.button__fixed a {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.button__fixed a {
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+!Estilos del formulario login 
+*/
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59vh;
+}
+
+.login-box h1 {
+    font-size: 72px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.input-style {
+    height: 60px;
+    display: block;
+    max-width: 620px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 1.5rem;
+    color: black;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.input-style::placeholder {
+    color: black;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.login-box {
+    max-width: 620px;
+    width: 100%;
+    margin: 1rem;
+}
+
+.button-login {
+    margin-top: 60px;
+    font-weight: 700;
+    background-color: #1CD1B0;
+    border: none;
+    border-radius: 23.01px;
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* 
+!Estilos del formulario login 
+*/
+
+
+footer {
+    margin-top: 7rem;
+    background-color: #00669F;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+@media (max-width: 925px) {
+    .desk-heroes {
+        padding-top: 7rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10rem;
+    }
+
+    .card-heroes {
+        margin: 0rem;
+    }
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enlace {
+    display: block;
+    background-color: crimson;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.enlace:link {
+    color: black;
+    background-color: gold;
+}
+
+.enlace:visited {
+    color: black;
+    background-color: gold;
+}

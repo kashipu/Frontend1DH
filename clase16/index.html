@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clase16/main.css">
+    <title>Frontent 1 | C16A - Formularios </title>
+</head>
+<body>
+    <main>
+        <!--
+            @kashipu
+            TODO: Propiedades formularios
+            * action => Donde se envía el formulario 
+            * method => POST/GET como va a envarse el form 
+            * GET: los datos viajan en la URL
+            * POST: los datos viajan en el body de la petición
+            * disabled => no se envía con el form
+            * placeholder => pista en el input
+            * readonly: se deja ver pero no modificar
+            * hidden: lo oculta pero se envía el espacio del formulario
+            * accept: las extenciones de los documentos
+        -->
+        <div class="container">
+            <form action="" method="GET">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre de Pila</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <!-- --- -->
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" required>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <!-- --- -->
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" required>
+                    <!-- --- -->
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Creación de usuario</legend>
+                    <!-- --- -->
+                    <label for="user">Usuario</label>
+                    <input type="tel" name="user" id="user" required>
+                    <!-- --- -->
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Documentos Adjuntos</legend>
+                    <!-- --- -->
+                    <label for="user">Archivos</label>
+                    <input type="file" name="user" id="user" required accept=".pdf">
+                </fieldset>
+                <fieldset>
+                    <legend>Verificación de políticas</legend>
+                    <!-- --- -->
+                    <input type="radio" id="huey" name="drone" value="huey">
+                    <label for="huey">Prueba</label>
+                    <input type="radio" id="huey" name="drone" value="huey">
+                    <label for="huey">Huey</label>
+                    <input type="checkbox" id="huey" name="drone" value="huey">
+                    <label for="huey">Huey</label>
+                    <!-- --- -->
+                </fieldset>
+                <fieldset>
+                    <label for="select_superhero">Seleccionar Superheroes</label>
+                    <select id="select_superhero">
+                        <option value="">Batman</option>
+                        <option value="">Batman</option>
+                        <option value="">Batman</option>
+                        <option value="">Batman</option>
+                    </select>
+                </fieldset>
+                <button type="submit">Enviar datos</button>
+                <button type="reset">Limpiar datos</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
