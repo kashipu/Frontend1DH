@@ -10,7 +10,9 @@
     --azul-700: rgb(29, 30, 37);
     --rojo-100: rgb(255, 239, 234);
     --gris: rgb(249, 249, 249);
-    /* ! Breakpoints */ 
+    --gris-500: rgba(179, 178, 183, 1);
+    --blanco: rgb(255, 255, 255);
+    /* ! Breakpoints */
     --mobile: 375px;
     --tablet: 769px;
     --desktop: 1440px;
@@ -22,4 +24,239 @@
     box-sizing: border-box;
     font-family: 'Be Vietnam', sans-serif;
     font-size: 16px;
+}
+
+.wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* nav styles */
+header {
+    padding: 4rem 0rem;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burguer__nav {
+    display: none;
+}
+
+.list {
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
+
+.list li a {
+    text-decoration: none;
+    color: var(--azul-500);
+}
+
+.list li a:hover {
+    text-decoration: none;
+    color: var(--rojo-500);
+}
+
+.button__container {
+    background-color: var(--rojo-500);
+    padding: .8rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.button__container a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+/* nav styles */
+
+/* banner styles */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.banner__box {
+    display: flex;
+}
+
+.banner__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 439px;
+}
+
+.banner__text h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+    color: var(--azul-500);
+    margin: 0rem;
+    padding-bottom: 1.5rem;
+}
+
+.banner__text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.banner__button {
+    display: flex;
+}
+
+.banner__img img {
+    width: 100%;
+}
+
+/* banner styles */
+
+/* features styles */
+
+.features {
+    /* border: 1px solid red; */
+}
+
+.features__box {
+    display: flex;
+}
+
+.features__title h2 {
+    font-size: 2.25rem;
+    color: var(--azul-500);
+    margin-bottom: 1rem;
+}
+
+.features__title p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-right: 7rem;
+    line-height: 1.4;
+}
+
+.features__items {
+    padding-left: 8rem;
+}
+
+.features__list li::before {
+    content: "0"counter(list-item);
+    background-color: var(--rojo-500);
+    font-weight: 700;
+    color: var(--blanco);
+    border-radius: 30px;
+    padding: .8rem 1.5rem;
+    position: absolute;
+    margin-left: -5rem;
+}
+
+.features__list li {
+    list-style: none;
+    padding: 1.2rem;
+    margin-left: 3rem;
+}
+
+.features__list li h3 {
+    color: var(--azul-500);
+    font-weight: 700;
+    padding: .8rem 0rem;
+}
+
+.features__list li p {
+    color: var(--gris-500);
+    font-weight: 500;
+    padding: .8rem 0rem;
+    line-height: 1.8;
+}
+
+/* features styles */
+
+/* media query */
+
+/* desktop */
+@media (max-width: 1440px) {
+    .wrapper {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet */
+@media (max-width: 879px) {
+    .wrapper {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    header {
+        padding: 3rem 0rem;
+    }
+    .nav__container {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /* nav styles */
+    .nav__logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__list {
+        padding: 3rem 0rem;
+        display: none;
+    }
+    .list {
+        flex-direction: column;
+    }
+    .burguer__nav {
+        display: inline;
+    }
+    .nav__button {
+        display: none;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    .banner__box {
+        order: 2;
+    }
+    .banner__img {
+        order: 1;
+    }
+    .banner__text {
+        max-width: 100%;
+    }
+    .banner__button {
+        justify-content: center;
+    }
+    .features__box {
+        flex-direction: column;
+    }
+    .features__title {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    .features__title p {
+        padding-right: 0rem;
+    }
+    .features__items {
+        padding-left: 1rem;
+    }
 }
