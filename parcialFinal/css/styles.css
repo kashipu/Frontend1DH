@@ -9,6 +9,7 @@
     --azul-100: rgb(143, 148, 167);
     --azul-700: rgb(29, 30, 37);
     --rojo-100: rgb(255, 239, 234);
+    --rojo-300: rgb(255, 164, 141);
     --gris: rgb(249, 249, 249);
     --gris-500: rgba(179, 178, 183, 1);
     --blanco: rgb(255, 255, 255);
@@ -26,8 +27,17 @@
     font-size: 16px;
 }
 
+.bfix {
+    border: 1px solid red;
+}
+
 .wrapper {
     max-width: 60%;
+    margin: 0 auto;
+}
+
+.wrapper__testimonials {
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -64,17 +74,29 @@ header {
     color: var(--rojo-500);
 }
 
-.button__container {
+.btn__box, .btn__submit {
     background-color: var(--rojo-500);
     padding: .8rem 1.5rem;
     border-radius: 50px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-}
-
-.button__container a {
     font-weight: 500;
     text-decoration: none;
     color: var(--blanco);
+}
+
+.btn__box:hover {
+    background-color: var(--azul-500);
+}
+
+
+.btn__blanco {
+    background-color: var(--blanco);
+    color: var(--rojo-500);
+}
+
+.btn__blanco:hover {
+    background-color: var(--blanco);
+    color: var(--rojo-500);
 }
 
 /* nav styles */
@@ -84,7 +106,7 @@ header {
 .banner {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 
 .banner__box {
@@ -127,7 +149,7 @@ header {
 /* features styles */
 
 .features {
-    /* border: 1px solid red; */
+    padding-bottom: 10rem;
 }
 
 .features__box {
@@ -180,8 +202,145 @@ header {
     padding: .8rem 0rem;
     line-height: 1.8;
 }
-
 /* features styles */
+
+
+/* testimonials */
+.testimonials {
+    padding-bottom: 10rem;
+}
+.testimonials__title {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.testimonials__title h2 {
+    font-size: 2.5rem;
+    color: var(--azul-500);
+}
+
+.testimonial__people {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.testimonial__button {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.people__item {
+    text-align: center;
+    position: relative;
+}
+
+.people__photo {
+    position: relative;
+    top: 30px;
+
+}
+
+.people__photo img {
+    width: 70px;
+    height: 70px;
+}
+
+.people__body {
+    background-color: var(--gris);
+    padding: 4rem 3rem;
+}
+
+.people__body h3 {
+    padding-bottom: 1rem;
+    color: var(--azul-500);
+}
+
+.people__body p {
+    line-height: 1.8;
+    color: var(--gris-500);
+}
+/* testimonials */
+
+/* Color banner */
+.color__banner {
+    padding: 6rem 0rem;
+    background-color: var(--rojo-500);
+}
+
+.color__banner__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color__banner__text h2 {
+    color: var(--blanco);
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+/* Color banner */
+
+/* Footer */
+footer {
+    background-color: var(--azul-700);
+    padding: 4rem 0rem;
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.colum1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.redes__list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.items__footer {
+    list-style: none;
+}
+
+.foo__item {
+    color: var(--blanco);
+    padding-bottom: 1.5rem;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.suscribe__inbox input[type="text"] {
+    padding: .8rem;
+    border-radius: 30px;
+    margin-right: .5rem;
+    border: none;
+}
+
+.footer__copyrigth {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0rem;
+    color: var(--gris-500);
+}
 
 /* media query */
 
@@ -258,5 +417,32 @@ header {
     }
     .features__items {
         padding-left: 1rem;
+    }
+    /* Responsive testimonials */
+    .testimonial__people {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .color__banner__box {
+        flex-direction: column;
+        gap: 70px;
+        text-align: center;
+    }
+    
+    .footer__box {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    
+    .colum1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }   
+    .footer__copyrigth {
+        padding: 2rem 0rem;
+        justify-content: flex-start;
     }
 }
