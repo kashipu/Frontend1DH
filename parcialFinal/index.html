@@ -14,11 +14,11 @@
       <div class="nav__container wrapper">
         <div class="nav__logo">
           <img src="/img/logo.svg" alt="Logo, Manage" />
-          <div class="burguer__nav">
+          <div id="buttonBurguer" onclick="toggleMenu()" class="burguer__nav">
             <img src="/img/icon-hamburger.svg" alt="" />
           </div>
         </div>
-        <nav class="nav__list">
+        <nav id="navList" class="nav__list">
           <ul class="list">
             <li class="list__items"><a href="#">Pricing</a></li>
             <li class="list__items"><a href="#">Product</a></li>
@@ -27,8 +27,8 @@
             <li class="list__items"><a href="#">Community</a></li>
           </ul>
         </nav>
-        <div class="nav__button">
-            <a class="btn__box" href="#">Get Started</a>
+        <div id="navButton" class="nav__button">
+          <a class="btn__box" href="#">Get Started</a>
         </div>
       </div>
     </header>
@@ -43,7 +43,7 @@
                 tasks while keeping the large team goals in view
               </p>
               <div class="banner__button">
-                  <a href="#" class="btn__box">Get Started</a>
+                <a href="#" class="btn__box">Get Started</a>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
                   <img src="/img/avatar-anisha.png" alt="" />
                 </div>
                 <div class="people__body">
-                  <h3>Ali Bravo</h3>
+                  <h3>Anisha Bravo</h3>
                   <p>
                     “Manage has supercharged our team´s workflow. The ability to
                     maintain visibility on larger milestones at all times keeps
@@ -115,27 +115,27 @@
               </div>
               <div class="people__item">
                 <div class="people__photo">
-                  <img src="/img/avatar-anisha.png" alt="" />
+                  <img src="/img/avatar-ali.png" alt="" />
                 </div>
                 <div class="people__body">
                   <h3>Ali Bravo</h3>
                   <p>
-                    “Manage has supercharged our team´s workflow. The ability to
-                    maintain visibility on larger milestones at all times keeps
-                    everyone motivated.”
+                    “We have been able to cancel so many other subscriptions
+                    since using manage. There ir no more cross-channel confusion
+                    and everyone is much more focused.”
                   </p>
                 </div>
               </div>
               <div class="people__item">
                 <div class="people__photo">
-                  <img src="/img/avatar-anisha.png" alt="" />
+                  <img src="/img/avatar-richard.png" alt="" />
                 </div>
                 <div class="people__body">
-                  <h3>Ali Bravo</h3>
+                  <h3>Richard Bravo</h3>
                   <p>
-                    “Manage has supercharged our team´s workflow. The ability to
-                    maintain visibility on larger milestones at all times keeps
-                    everyone motivated.”
+                    “Manage allows us to provide structure and process. It keeps
+                    us organized and focused. I can´t stop recommending them to
+                    everyone i talk to!”
                   </p>
                 </div>
               </div>
@@ -149,63 +149,65 @@
       <section class="color__banner">
         <div class="color__banner__box wrapper">
           <div class="color__banner__text">
-            <h2>Simplify hoy your team <br> words today.</h2>
+            <h2>
+              Simplify hoy your team <br />
+              words today.
+            </h2>
           </div>
           <div class="color__banner__button">
-              <a class="btn__box btn__blanco" href="">Get Started</a>
+            <a class="btn__box btn__blanco" href="">Get Started</a>
           </div>
         </div>
       </section>
-      <footer>
-        <div class="footer__box wrapper">
-          <div class="colum1">
-            <img src="/img/logo__imagen.png" alt="Logo, Manage">
-            <ul class="redes__list">
-              <li class="redes__item">
-                <img src="/img/icon-facebook.svg" alt="Logo, Facebook">
-              </li>
-              <li class="redes__item">
-                <img src="/img/icon-youtube.svg" alt="Logo, Youtube">
-              </li>
-              <li class="redes__item">
-                <img src="/img/icon-twitter.svg" alt="Logo, Twitter">
-              </li>
-              <li class="redes__item">
-                <img src="/img/icon-pinterest.svg" alt="Logo, Pinterest">
-              </li>
-              <li class="redes__item">
-                <img src="/img/icon-instagram.svg" alt="Logo, Instagram">
-              </li>
-            </ul>
-          </div>
-          <div class="colum2">
-            <ul class="items__footer">
-              <li class="foo__item">
-                Home
-              </li>
-              <li class="foo__item">Pricing</li>
-              <li class="foo__item">Products</li>
-              <li class="foo__item">About Us</li>
-            </ul>
-          </div>
-          <div class="colum3">
-            <ul class="items__footer">
-              <li class="foo__item">Careers</li>
-              <li class="foo__item">Community</li>
-              <li class="foo__item">Privacy Policy</li>
-            </ul>
-          </div>
-          <div class="colum4">
-            <form class="suscribe__inbox" action="">
-              <input type="text" placeholder="Update yout inbox">
-              <button type="submit" class="btn__submit">Go</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer__copyrigth wrapper">
-          <p>Copyright 2020. All Rights Reserved</p>
-        </div>
-      </footer>
     </main>
+    <footer>
+      <div class="footer__box wrapper">
+        <div class="colum1">
+          <img src="/img/logo__imagen.png" alt="Logo, Manage" />
+          <ul class="redes__list">
+            <li class="redes__item">
+              <img src="/img/icon-facebook.svg" alt="Logo, Facebook" />
+            </li>
+            <li class="redes__item">
+              <img src="/img/icon-youtube.svg" alt="Logo, Youtube" />
+            </li>
+            <li class="redes__item">
+              <img src="/img/icon-twitter.svg" alt="Logo, Twitter" />
+            </li>
+            <li class="redes__item">
+              <img src="/img/icon-pinterest.svg" alt="Logo, Pinterest" />
+            </li>
+            <li class="redes__item">
+              <img src="/img/icon-instagram.svg" alt="Logo, Instagram" />
+            </li>
+          </ul>
+        </div>
+        <div class="colum2">
+          <ul class="items__footer">
+            <li class="foo__item">Home</li>
+            <li class="foo__item">Pricing</li>
+            <li class="foo__item">Products</li>
+            <li class="foo__item">About Us</li>
+          </ul>
+        </div>
+        <div class="colum3">
+          <ul class="items__footer">
+            <li class="foo__item">Careers</li>
+            <li class="foo__item">Community</li>
+            <li class="foo__item">Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="colum4">
+          <form class="suscribe__inbox" action="">
+            <input type="text" placeholder="Update yout inbox" />
+            <button type="submit" class="btn__submit">Go</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyrigth wrapper">
+        <p>Copyright 2020. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>
